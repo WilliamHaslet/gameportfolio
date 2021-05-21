@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../Style/variables.css">
+        <link rel="stylesheet" href="../Style/palettes.css">
+        <link rel="stylesheet" href="../Style/generalStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postMobileStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerMobileStyle.css">
+        
+        <script src="../JavaScript/cssHelperFunctions.js"></script>
+        <script src="../JavaScript/isMobile.js"></script>
+        <script src="../JavaScript/colorPalettes.js"></script>
+        <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
+        <script src="../JavaScript/Posts/addFloats.js"></script>
+        <script src="../JavaScript/Posts/verticallyCenter.js"></script>
+        <!-- Bottom Banner -->
+        <script src="../JavaScript/Posts/bottomBanner.js"></script>
+        <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
+        <script src="../JavaScript/BottomBanner/bottomBannerCenter.js"></script>
+        <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
+        <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="globalDiv">
+
+            <div id="banner">
+
+                <p id="bannerTitle">Gold Rush</p>
+
+            </div>
+
+            <div id="content">
+
+                <img src="../Images/GoldRush/Gameplay1.gif" alt="Four player split screen">
+                
+                <div class="pair">
+
+                    <p class="text">
+                        I created Gold Rush as a game jam project to experiment with multiplayer networking and random generation. 
+                        The gameplay involves racing other players to mine as much gold as possible within the time limit. I used a tile system and Perlin noise to generate a unique cave system each game. 
+                        I programmed a movement system that works with the tile system by gently aligning the players to the tile grid. 
+                        This prevents the players from getting snagged on tiles so that the fast movement and game pacing are never broken.
+                        <br><br>
+                        I decided to make a website that acts as the game controller so that players can join a local game using their computer or phone. 
+                        The website lets players input a name and connection code to connect to the game server, then use the arrow buttons on the website or their keyboard arrow keys to control their character. 
+                        The website sends WebSocket messages that are received by a TCP server and used to move that player's miner.
+                    </p>
+
+                    <img src="../Images/GoldRush/Controller.gif" alt="Controller website" class="mobile75Individual">
+
+                </div>
+
+                <div class="center">
+
+                    <div>
+
+                        <a href="https://github.com/WilliamHaslet/goldrush" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/githubLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Check out the game's code on GitHub</p>
+            
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <a href="https://github.com/WilliamHaslet/goldrushcontrollerwebsite" target="_blank" class="linkGroupLink" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/githubLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Check out the game controller website code</p>
+            
+                        </a>
+
+                    </div>
+                    
+                </div>
+
+                <img src="../Images/GoldRush/Gameplay2.gif" alt="Gif of gameplay" class="width75 mobile100">
+
+                <div id="bottomBanner">
+        
+                    <script>
+                
+                        AddBottomBannerContent("../");
+    
+                    </script>
+
+                </div>
+
+            </div>
+
+            <script src="../JavaScript/Posts/addBackButton.js"></script>
+
+        </div> <!-- globalDiv -->
+
+    </body>
+
+</html>

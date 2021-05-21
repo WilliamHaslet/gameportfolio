@@ -1,0 +1,39 @@
+html
+{
+    background-color: var(--themeColorDark);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: var(--fontColor);
+    font-size: var(--defaultFontSize);
+    font-family: var(--defaultFontFamily);
+    font-weight: var(--defaultFontWeight);
+}
+
+#globalDiv
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 100%;
+    left: 0%;
+    right: 100%;
+}
+
+#banner
+{
+    position: absolute;
+    background-color: var(--bannerColor);
+    width: 100%;
+    height: var(--bannerHeight);
+    top: 0%;
+    bottom: 100%;
+    left: 0%;
+    right: 100%;
+    font-family: var(--bannerFontFamily);
+}
+
+a
+{
+    color: inherit;
+}

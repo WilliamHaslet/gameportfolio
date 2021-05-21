@@ -1,0 +1,91 @@
+:root
+{
+    /* Default Font */
+    --defaultFontSize: 18px;
+    --defaultFontFamily: "Lato", serif, sans-serif;
+    --defaultFontWeight: 300;
+
+    /* Header Font */
+    --headerFontFamily: "Roboto", sans-serif;
+    --tileHeaderFontSize: 30px;
+    --tileHeaderFontWeight: 900;
+    --postHeaderFontSize: 24px;
+    --postHeaderFontWeight: 700;
+    
+    /* Banner */
+    --bannerFontFamily: "Roboto", sans-serif;
+    --bannerHeight: 200px;
+    --bannerFontSize: 60px;
+    --bannerFontWeight: 900;
+    --bannerBottomFontSize: 60px;
+    --bannerBottomFontWeight: 100;
+    --bannerLineHeight: 32px;
+
+    /* Bottom Banner */
+    --linkGroupWidth: 140px;
+    --linkGroupHeight: 60px;
+    --linkSpacing: 70px;
+
+    /* Colors */
+    --themeColor: rgb(22, 57, 68);
+    --themeColorDark: rgb(12, 39, 48);
+    --themeColorLight: rgb(44, 100, 114);
+    --fontColor: rgb(255, 255, 255);
+    --bannerColor: rgb(2, 26, 34);
+
+    /* Tiles */
+    --postTilesMaxWidth: 2000px;
+    --tileHorizontalCount: 3;
+    --tileSpacing: 40px;
+    --tileWidth: calc((100% - (var(--tileSpacing) * (var(--tileHorizontalCount) + 1))) / var(--tileHorizontalCount));
+    --tileHeight: 700px;
+    --tileTextWidth: 90%;
+    --tileImageWidth: 95%;
+    --tileHoverZoomSize: 10px;
+    --tileTopSpacing: var(--tileSpacing);
+    
+    --tileTitleVerticalMargins: 24px;
+
+    --tileDescriptionRightMargin: 5%;
+    --tileDescriptionIndent: 15px;
+
+    /* Posts */
+    --contentWidth: 60%;
+    --contentMaxWidth: 1100px;
+    --margins: 40px;
+
+    --desktopContentLeft: calc((100% - var(--contentWidth)) / 2);
+    --backButtonOffset: 20px;
+}
+
+@media screen and (max-width: 1400px) 
+{
+    :root
+    {
+        --tileHorizontalCount: 2;
+        --tileWidth: calc((100% - (var(--tileSpacing) * (var(--tileHorizontalCount) + 1))) / var(--tileHorizontalCount));
+
+        --contentWidth: 75%;
+        --margins: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) 
+{
+    :root
+    {
+        --bannerFontSize: 45px;
+        --bannerFontWeight: 900;
+        --bannerBottomFontSize: 45px;
+        --bannerBottomFontWeight: 100;
+        --bannerLineHeight: 29px;
+
+        --tileHorizontalCount: 1;
+        --tileSpacing: 5px;
+        --tileWidth: calc((100% - (var(--tileSpacing) * (var(--tileHorizontalCount) + 1))) / var(--tileHorizontalCount));
+        --tileImageWidth: 96%;
+        --tileTopSpacing: 30px;
+
+        --backButtonOffset: 8px;
+    }
+}

@@ -1,0 +1,138 @@
+#bannerTitle
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: var(--bannerFontSize);
+    font-weight: var(--bannerFontWeight);
+    margin-top: calc((var(--bannerHeight) / 2) - (var(--bannerFontSize) / 2) - 10px);
+}
+
+#content
+{
+    position: absolute;
+    top: var(--bannerHeight);
+    background-color: var(--themeColor);
+    width: var(--contentWidth);
+    max-width: var(--contentMaxWidth);
+    left: var(--desktopContentLeft);
+}
+
+.text, .pair, img
+{
+    display: block;
+    width: calc(100% - (var(--margins) * 2));
+    margin-right: var(--margins);
+    margin-left: var(--margins);
+    margin-top: var(--margins);
+    margin-bottom: var(--margins);
+}
+
+.text
+{
+    text-align: left;
+}
+
+.pair
+{
+    clear: both;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.width75
+{
+    --newWidth: calc((100% - (var(--margins) * 2)) * 0.75);
+    width: var(--newWidth);
+    margin-right: calc((100% - var(--newWidth)) / 2);
+    margin-left: calc((100% - var(--newWidth)) / 2);
+}
+
+.floatLeft, .floatRight
+{
+    float: left;
+    --halfMargin: calc(var(--margins) / 2);
+    width: calc((100% - var(--margins)) / 2);
+    margin-top: 0;
+    margin-bottom: var(--margins);
+}
+
+.floatLeft
+{
+    margin-right: var(--halfMargin);
+    margin-left: 0;
+}
+
+.floatRight
+{
+    margin-right: 0;
+    margin-left: var(--halfMargin);
+}
+
+.iconGroupBottomMargin
+{
+    margin-bottom: 20px;
+}
+
+.iconTextBottomMargin
+{
+    margin-bottom: 0px;
+}
+
+#backButton
+{
+    position: fixed;
+    --buttonSize: 50px;
+    width: var(--buttonSize);
+    height: var(--buttonSize);
+    top: var(--backButtonOffset);
+    left: var(--backButtonOffset);
+}
+
+#backArrow
+{
+    position: relative;
+    --arrowSize: 13px;
+    width: var(--arrowSize);
+    height: var(--arrowSize);
+    top: 11px;
+    left: 13px;
+    margin: 0 0 0 0;
+    border: 0 solid var(--fontColor);
+    --arrowWidth: 12px;
+    border-bottom-width: var(--arrowWidth); 
+    border-right-width: var(--arrowWidth);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+ul
+{
+    list-style-type: square;
+    margin: 0 0 0 0;
+}
+
+.header
+{
+    font-size: var(--postHeaderFontSize);
+    font-weight: var(--postHeaderFontWeight);
+    font-family: var(--headerFontFamily);
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+li.bottomMargin
+{
+    margin-bottom: 10px;
+}
+
+.linkGroupImage.android
+{
+    height: 60px;
+    margin-top: 0px;
+    margin-right: 0px;
+}

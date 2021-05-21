@@ -1,0 +1,14 @@
+:root
+{
+    --palette1Main: rgb(22, 57, 68);
+    --palette1Dark: rgb(12, 39, 48);
+    --palette1Light: rgb(44, 100, 114);
+
+    --palette2Main: rgb(221, 165, 12);
+    --palette2Dark: rgb(22, 25, 49);
+    --palette2Light: rgb(40, 87, 67);
+
+    --palette3Main: rgb(25, 42, 97);
+    --palette3Dark: rgb(4, 16, 54);
+    --palette3Light: rgb(96, 129, 236);
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../Style/variables.css">
+        <link rel="stylesheet" href="../Style/palettes.css">
+        <link rel="stylesheet" href="../Style/generalStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postMobileStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerMobileStyle.css">
+        
+        <script src="../JavaScript/cssHelperFunctions.js"></script>
+        <script src="../JavaScript/isMobile.js"></script>
+        <script src="../JavaScript/colorPalettes.js"></script>
+        <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
+        <script src="../JavaScript/Posts/addFloats.js"></script>
+        <script src="../JavaScript/Posts/verticallyCenter.js"></script>
+        <!-- Bottom Banner -->
+        <script src="../JavaScript/Posts/bottomBanner.js"></script>
+        <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
+        <script src="../JavaScript/BottomBanner/bottomBannerCenter.js"></script>
+        <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
+        <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="globalDiv">
+
+            <div id="banner">
+
+                <p id="bannerTitle">Karting Study</p>
+
+            </div>
+
+            <div id="content">
+
+                <img src="../Images/KartingStudy/Gameplay2.gif" alt="Boosting and drifting gif" class="width75 mobile100">
+
+                <div class="pair">
+
+                    <div class="text">
+
+                        <p class="header">
+                            Technical Features
+                        </p>
+
+                        <ul>
+                            <li class="bottomMargin">
+                                Built a kart controller using unrealistic physics that can be easily tailored to the desired feel
+                            </li>
+                            <li class="bottomMargin">
+                                Implemented drifting as curves that adjust for kart speed and input direction
+                            </li>
+                            <li class="bottomMargin">
+                                Support for keyboard and gamepad control 
+                            </li>
+                            <li class="bottomMargin">
+                                Localized kart gravity allows for vertical, upside down, and otherwise physically impossible track design
+                            </li>
+                            <li class="bottomMargin">
+                                Checkpoint system used for counting laps, returning karts to the track after falling, and generating track splines for AI
+                            </li>
+                            <li class="bottomMargin">
+                                Kart AI that uses spline curves for track traversal
+                            </li>
+                            <li class="bottomMargin">
+                                Spline curve editor tool for tweaking the curve that is generated from the checkpoints
+                            </li>
+                            <li>
+                                Minimap generator that uses the track mesh to generate a minimap image during runtime or edit time
+                            </li>
+                        </ul> 
+                    </div>
+
+                    <div class="text">
+
+                        <p class="header">
+                            Visual Features
+                        </p>
+
+                        <ul>
+                            <li class="bottomMargin">
+                                Kart pitches and rolls based on acceleration
+                            </li>
+                            <li class="bottomMargin">
+                                Camera FOV scales with velocity sell the feeling of speed during boosts and jumps
+                            </li>
+                            <li class="bottomMargin">
+                                Speed lines postprocessing effect that scales in intensity with speed
+                            </li>
+                            <li class="bottomMargin">
+                                Minimap icons that follow each kart by converting kart position from world space to minimap space
+                            </li>
+                            <li>
+                                The minimap generator sets the color of the minimap based on the angle of the track so that verticality can be understood at a glance
+                            </li>
+                        </ul> 
+                    </div>
+
+                </div>
+
+                <img src="../Images/KartingStudy/Gameplay3.gif" alt="AI going over a jump" class="width75 mobile100">
+
+                <p class="text center width75 mobile100">
+                    Below is the spline curve editor tool I built to define an ideal path for the AI, each of which
+                    is given an accuracy value that controls how well it will follow the curve.
+                </p>
+                
+                <img src="../Images/KartingStudy/Spline.gif" alt="Spline curve editor tool gif">
+                
+                <div class="center">
+
+                    <div>
+
+                        <a href="https://github.com/WilliamHaslet/kartingstudy" target="_blank" class="linkGroupLink" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/githubLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Check out the source code on GitHub</p>
+            
+                        </a>
+
+                    </div>
+                    
+                </div>
+
+                <img src="../Images/KartingStudy/Gameplay1.gif" alt="Drifting around a vertical curve gif" class="width75 mobile100">
+
+                <div id="bottomBanner">
+        
+                    <script>
+                
+                        AddBottomBannerContent("../");
+    
+                    </script>
+
+                </div>
+
+            </div>
+
+            <script src="../JavaScript/Posts/addBackButton.js"></script>
+
+        </div> <!-- globalDiv -->
+
+    </body>
+
+</html>

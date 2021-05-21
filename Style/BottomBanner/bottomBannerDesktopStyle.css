@@ -1,0 +1,97 @@
+#bottomBanner
+{
+    position: absolute;
+    background-color: var(--bannerColor);
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.sectionText
+{
+    clear: both;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.linkGroup, .linkGroupLink
+{
+    color: var(--fontColor);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.linkGroup
+{
+    float: left;
+    height: var(--linkGroupHeight);
+    margin-right: var(--linkSpacing);
+    margin-bottom: 50px;
+}
+
+.linkGroupLink
+{
+    display: inline-block;
+}
+
+.linkGroupLink:hover
+{
+    cursor: pointer;
+}
+
+.linkGroupText, .linkGroupImage
+{
+    float: left;
+}
+
+.linkGroupText
+{
+    text-align: center;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--fontColor);
+    transition: border-bottom-width 0.1s;
+}
+
+.linkGroupImage
+{
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#emailSectionText
+{
+    margin-bottom: 15px;
+}
+
+.emailGroup
+{
+    margin-bottom: 20px;
+}
+
+#emailText
+{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.emailLinkText
+{
+    font-size: 18px;
+}
+
+.emailLinkIcon
+{
+    height: 35px;
+}
+
+#emailIcon
+{
+    height: 24px;
+    margin-top: 16px;
+}

@@ -1,0 +1,45 @@
+@media screen and (max-width: 800px) 
+{
+    #bannerTitle
+    {
+        margin-top: calc((var(--bannerHeight) / 2) - (var(--bannerFontSize) / 2) - 5px);
+    }
+
+    #content
+    {
+        width: 100%;
+        left: 0;
+    }
+    
+    .floatLeft:not(.mobileHorizontal), .floatRight:not(.mobileHorizontal)
+    {
+        float: none;
+        --newWidth: 100%;
+        width: var(--newWidth);
+        margin-right: calc((100% - var(--newWidth)) / 2);
+        margin-left: calc((100% - var(--newWidth)) / 2);
+    }
+    
+    .mobile75
+    {
+        --newWidth: calc((100% - (var(--margins) * 2)) * 0.75);
+        width: var(--newWidth);
+        margin-right: calc((100% - var(--newWidth)) / 2);
+        margin-left: calc((100% - var(--newWidth)) / 2);
+    }
+
+    .mobile100
+    {
+        width: calc(100% - (var(--margins) * 2));
+        margin-right: var(--margins);
+        margin-left: var(--margins);
+    }
+
+    .floatLeft:is(.mobile75Individual), .floatRight:is(.mobile75Individual)
+    {
+        --newWidth: 75%;
+        width: var(--newWidth);
+        margin-right: calc((100% - var(--newWidth)) / 2);
+        margin-left: calc((100% - var(--newWidth)) / 2);
+    }
+}

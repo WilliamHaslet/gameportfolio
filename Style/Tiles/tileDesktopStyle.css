@@ -1,0 +1,114 @@
+#bannerTitle
+{
+    position: absolute;
+    width: 100%;
+    height: calc(var(--bannerHeight) / 2);
+    margin-top: calc((var(--bannerHeight) / 2) - (var(--bannerFontSize) / 2) - 10px);
+    text-align: center;
+    line-height: var(--bannerLineHeight);
+}
+
+#bannerTopText
+{
+    font-size: var(--bannerFontSize);
+    font-weight: var(--bannerFontWeight);
+}
+
+#bannerBottomText
+{
+    font-size: var(--bannerBottomFontSize);
+    font-weight: var(--bannerBottomFontWeight);
+}
+
+.postLink
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+#postTiles
+{
+    position: absolute;
+    column-gap: var(--tileSpacing);
+    column-count: var(--tileHorizontalCount);
+    width: calc(100% - (var(--tileSpacing) * 2));
+    max-width: var(--postTilesMaxWidth);
+    top: var(--bannerHeight);
+    margin-left: var(--tileSpacing);
+    margin-right: var(--tileSpacing);
+    padding-bottom: var(--tileSpacing);
+}
+
+.postTile
+{
+    display: inline-block;
+    background-color: var(--themeColor);
+    margin-top: var(--tileTopSpacing);
+    transition: margin 0.35s, padding 0.35s, background-color 0.5s;
+}
+
+.postTile:hover
+{
+    background-color: var(--themeColorLight);
+    margin-left: calc(var(--tileHoverZoomSize) * -1);
+    margin-right: calc(var(--tileHoverZoomSize) * -1);
+    margin-top: calc(var(--tileSpacing) + (var(--tileHoverZoomSize) * -1));
+    margin-bottom: calc(var(--tileHoverZoomSize) * -1);
+    padding: var(--tileHoverZoomSize) var(--tileHoverZoomSize) var(--tileHoverZoomSize) var(--tileHoverZoomSize);
+}
+
+.tileSpacer
+{
+    background-color: transparent;
+    width: 100px;
+    height: 200px;
+}
+
+.tileSpacer:hover
+{
+    background-color: transparent;
+}
+
+.tileImage
+{
+    width: var(--tileImageWidth);
+    margin-left: calc((100% - var(--tileImageWidth)) / 2);
+    margin-top: calc((100% - var(--tileImageWidth)) / 2);
+}
+
+.tileTitle
+{
+    display: inline-block;
+    font-size: var(--tileHeaderFontSize);
+    font-weight: var(--tileHeaderFontWeight);
+    font-family: var(--headerFontFamily);
+    margin-left: calc((100% - var(--tileTextWidth)) / 2);
+    margin-top: var(--tileTitleVerticalMargins);
+    margin-bottom: var(--tileTitleVerticalMargins);
+    text-align: left;
+}
+
+.tileDescription
+{
+    width: calc(var(--tileTextWidth) - var(--tileDescriptionRightMargin));
+    margin-left: calc(((100% - var(--tileTextWidth)) / 2) + var(--tileDescriptionIndent));
+    margin-top: 0;
+    margin-bottom: calc(var(--tileTitleVerticalMargins) + 3px);
+    text-align: left;
+    text-indent: calc(var(--tileDescriptionIndent) * -1);
+}
+
+br
+{
+    margin-bottom: 2px;
+}
+
+br.big
+{
+    margin-bottom: 10px;
+}
+
+.sectionTitle
+{
+    font-weight: 400;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../Style/variables.css">
+        <link rel="stylesheet" href="../Style/palettes.css">
+        <link rel="stylesheet" href="../Style/generalStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postMobileStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerMobileStyle.css">
+        
+        <script src="../JavaScript/cssHelperFunctions.js"></script>
+        <script src="../JavaScript/isMobile.js"></script>
+        <script src="../JavaScript/colorPalettes.js"></script>
+        <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
+        <script src="../JavaScript/Posts/addFloats.js"></script>
+        <script src="../JavaScript/Posts/verticallyCenter.js"></script>
+        <!-- Bottom Banner -->
+        <script src="../JavaScript/Posts/bottomBanner.js"></script>
+        <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
+        <script src="../JavaScript/BottomBanner/bottomBannerCenter.js"></script>
+        <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
+        <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="globalDiv">
+
+            <div id="banner">
+
+                <p id="bannerTitle">Blocko</p>
+
+            </div>
+
+            <div id="content">
+
+                <img src="../Images/Blocko/Gameplay1.gif" alt="Playing easy mode" class="width75 mobile100">
+
+                <div class="pair">
+
+                    <p class="text">
+                        Blocko is a side scrolling endless runner developed for mobile devices. I handled the full process of creating the game from concept to publication. 
+                        I implemented game modes of varying difficultly that procedurally place platforms, coins, powerups, and spike hazards for the player to navigate. 
+                        I built a customization system that allow players to use the coins they pick up to buy skins, hats, trails, and particle effects.
+                        I used a third-party hosting site to implement online leaderboards to increase player competition.
+                    </p>
+
+                    <p class="text">
+                        I initially published Blocko on Android and iOS, then continued to update the game with more game modes and the addition of trails and particle effects. During development, 
+                        I play tested the game with the help of my peers and used the feedback to balance the difficultly of each game mode.
+                    </p>
+
+                </div>
+                
+                <img src="../Images/Blocko/Gameplay2.gif" alt="Playing hard mode" class="width75 mobile100">
+
+                <div class="center">
+
+                    <div>
+
+                        <a href="https://github.com/WilliamHaslet/blocko" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/githubLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Check out the source code on GitHub</p>
+            
+                        </a>
+
+                    </div>
+                    
+                    <div>
+
+                        <a href="https://williamhaslet.itch.io/blocko" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/itchioLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Play in your browser on itch.io</p>
+            
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.WilliamHaslet.Blocko" target="_blank" class="linkGroupLink" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/androidLogo.png" class="linkGroupImage android">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Download for Android</p>
+            
+                        </a>
+
+                    </div>
+                    
+                </div>
+
+                <img src="../Images/Blocko/Gameplay3.gif" alt="Playing gravity mode" class="width75 mobile100">
+
+                <img src="../Images/Blocko/Gameplay4.gif" alt="Playing flipped mode" class="width75 mobile100">
+
+                <div id="bottomBanner">
+        
+                    <script>
+                
+                        AddBottomBannerContent("../");
+    
+                    </script>
+
+                </div>
+
+            </div>
+
+            <script src="../JavaScript/Posts/addBackButton.js"></script>
+
+        </div> <!-- globalDiv -->
+
+    </body>
+
+</html>

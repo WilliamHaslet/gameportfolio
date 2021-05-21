@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head id="headArea">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../Style/variables.css">
+        <link rel="stylesheet" href="../Style/palettes.css">
+        <link rel="stylesheet" href="../Style/generalStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postMobileStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerMobileStyle.css">
+        
+        <script src="../JavaScript/cssHelperFunctions.js"></script>
+        <script src="../JavaScript/isMobile.js"></script>
+        <script src="../JavaScript/colorPalettes.js"></script>
+        <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
+        <script src="../JavaScript/Posts/addFloats.js"></script>
+        <script src="../JavaScript/Posts/verticallyCenter.js"></script>
+        <!-- Bottom Banner -->
+        <script src="../JavaScript/Posts/bottomBanner.js"></script>
+        <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
+        <script src="../JavaScript/BottomBanner/bottomBannerCenter.js"></script>
+        <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
+        <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="globalDiv">
+
+            <div id="banner">
+
+                <p id="bannerTitle">Astroblaster</p>
+
+            </div>
+
+            <div id="content">
+
+                <p class="text center width75 mobile100">
+                    Astroblaster is an endless arcade shooter with periodic upgrade choices and new enemy spaceships that appear as the difficulty increases.
+                </p>
+
+                <div class="pair mobile75">
+
+                    <img src="../Images/Astroblaster/TitleUI.gif" alt="Image of UI">
+
+                    <img src="../Images/Astroblaster/Gameplay2.gif" alt="Gif of gameplay">
+
+                </div>
+
+                <div class="pair">
+
+                    <p class="text">
+                        I developed Astroblaster using Unity and C# to further improve my skill with these technologies. I handled all of the design and programming myself and experienced 
+                        the process of designing and implementing gameplay features from start to finish. I also designed, programmed, and animated the UI, which involved extending 
+                        Unity’s default text functionally to create curved text. I programmed the randomly generated background to avoid patterns and maintain consistent spacing 
+                        among its elements. I also optimized the game for the large number of ships, projectiles, and background elements that could be in play at any given moment.
+                    </p>
+
+                    <p class="text">
+                        To implement the circular UI, I wrote a shader to draw circles with adjustable space for the text. My curved text implementation improved 
+                        upon <a href="https://github.com/PushyPixels/BreakfastWithUnity/tree/master/Assets/69CurvedText">this</a> GitHub project. 
+                        The original code moved text vertices individually, which resulted in some letters being noticeably warped, so I modified it to transform the center point of each text quad, 
+                        then offset the vertices in local space. This maintained the normal spacing of the vertices, and prevented deformation.
+                    </p>
+
+                </div>
+
+                <img src="../Images/Astroblaster/CircleDemo.gif" alt="testImage" class="width75 mobile100">
+
+                <p class="text center width75 mobile100">
+                    A circle drawing shader with adjustable width and separately adjustable top and bottom gaps to easily fit any text.
+                </p>
+
+                <div class="pair">
+
+                    <img src="../Images/Astroblaster/CurveTextArialBad.png" alt="Curved text old" class="mobileHorizontal">
+
+                    <img src="../Images/Astroblaster/CurveTextArialGood.png" alt="Curved text improved" class="mobileHorizontal">
+
+                </div>
+
+                <p class="text center width75 mobile100">
+                    Deformation of the letters, especially the stem of the T, can be seen on the left. 
+                    My implementation transforms the center of each letter to avoid this effect, as seen on the right.
+                </p>
+
+                <div class="pair verticallyCenter">
+
+                    <div class="center">
+
+                        <a href="https://github.com/WilliamHaslet/astroblaster" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+                
+                            <img src="../Images/Logos/githubLogo.png" class="linkGroupImage">
+                
+                            <p class="linkGroupText iconTextBottomMargin">View the code on GitHub</p>
+                
+                        </a>
+
+                        <a href="https://williamhaslet.itch.io/astroblaster" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+                
+                            <img src="../Images/Logos/itchioLogo.png" class="linkGroupImage">
+                
+                            <p class="linkGroupText iconTextBottomMargin">Download builds on itch.io</p>
+                
+                        </a>
+                        
+                    </div>
+
+                    <img src="../Images/Astroblaster/Gameplay1.gif" alt="Gif of gameplay" class="mobile75Individual">
+
+                </div>
+
+                <div id="bottomBanner">
+        
+                    <script>
+                
+                        AddBottomBannerContent("../");
+    
+                    </script>
+
+                </div>
+
+            </div>
+
+            <script src="../JavaScript/Posts/addBackButton.js"></script>
+
+        </div> <!-- globalDiv -->
+
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px) 
+{
+    #bannerTitle
+    {
+        margin-top: calc((var(--bannerHeight) / 2) - (var(--bannerFontSize) / 2) - 10px);
+    }
+
+    #bottomBanner
+    {
+        margin-top: var(--tileTopSpacing);
+    }
+    
+    .postTile:hover
+    {
+        background-color: var(--themeColor);
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: var(--tileTopSpacing);
+        margin-bottom: 0;
+        padding: 0 0 0 0;
+    }
+
+    .tileTitle
+    {
+        border-bottom: 3px solid var(--fontColor);
+    }
+
+    .tileSpacer
+    {
+        display: none;
+    }
+}

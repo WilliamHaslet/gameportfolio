@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../Style/variables.css">
+        <link rel="stylesheet" href="../Style/palettes.css">
+        <link rel="stylesheet" href="../Style/generalStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/Posts/postMobileStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerDesktopStyle.css">
+        <link rel="stylesheet" href="../Style/BottomBanner/bottomBannerMobileStyle.css">
+        
+        <script src="../JavaScript/cssHelperFunctions.js"></script>
+        <script src="../JavaScript/isMobile.js"></script>
+        <script src="../JavaScript/colorPalettes.js"></script>
+        <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
+        <script src="../JavaScript/Posts/addFloats.js"></script>
+        <script src="../JavaScript/Posts/verticallyCenter.js"></script>
+        <!-- Bottom Banner -->
+        <script src="../JavaScript/Posts/bottomBanner.js"></script>
+        <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
+        <script src="../JavaScript/BottomBanner/bottomBannerCenter.js"></script>
+        <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
+        <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="globalDiv">
+
+            <div id="banner">
+
+                <p id="bannerTitle">Oblation</p>
+
+            </div>
+
+            <div id="content">
+
+                <img src="../Images/Oblation/Chase.gif" alt="Chased by guard gif" class="width75 mobile100">
+
+                <div class="pair">
+
+                    <p class="text">
+                        Oblation is an occult themed hide and seek game made using Unity and C# for the Ludum Dare game jam. I led a team of three with one 
+                        artist and two programmers, one of which was myself. As the team leader, I managed the team’s collective design choices, allocated tasks among team members, 
+                        and cut many features that were out of scope for a 48-hour project. As a programmer, I was responsible for programming the player character controller, programming 
+                        the interactive elements of houses, and programming the UI. As a designer, I was responsible for bringing 3D models into the engine, designing the 
+                        layout of AI patrol patterns, and building the village setting with assets from the artist.
+                    </p>
+
+                    <p class="text">
+                        I was a relatively new game developer at the time of this project, so jumping into a fast-paced project was both difficult and rewarding. 
+                        The 48-hour time constraint meant there were many difficult choices to made about what content and features to cut. One cut feature was the ability to 
+                        fight the guards, which was out of scope and a bad design choice because it would have diminished the threat that the guards pose. Since this was my 
+                        first experience developing a game with a team and leading it, 
+                        I got firsthand experience allocating and working on parallel tasks and managing their integration with other feature to form the final product.
+                    </p>
+
+                </div>
+                
+                <img src="../Images/Oblation/Overlook.png" alt="Overlooking the village" class="width75 mobile100">
+
+                <div class="center">
+
+                    <div>
+
+                        <a href="https://github.com/WilliamHaslet/oblation" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/githubLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Check out the source code on GitHub</p>
+            
+                        </a>
+
+                    </div>
+                    
+                    <div>
+
+                        <a href="https://williamhaslet.itch.io/oblation" target="_blank" class="linkGroupLink" 
+                            onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
+            
+                            <img src="../Images/Logos/itchioLogo.png" class="linkGroupImage">
+            
+                            <p class="linkGroupText iconTextBottomMargin">Download builds on itch.io</p>
+            
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <img src="../Images/Oblation/Found.gif" alt="Finding the woman in a blue dress gif" class="width75 mobile100">
+
+                <div id="bottomBanner">
+        
+                    <script>
+                
+                        AddBottomBannerContent("../");
+    
+                    </script>
+
+                </div>
+
+            </div>
+
+            <script src="../JavaScript/Posts/addBackButton.js"></script>
+
+        </div> <!-- globalDiv -->
+
+    </body>
+
+</html>
