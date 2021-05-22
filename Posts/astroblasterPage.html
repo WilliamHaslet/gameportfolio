@@ -24,6 +24,7 @@
         <script src="../JavaScript/colorPalettes.js"></script>
         <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
         <script src="../JavaScript/Posts/verticallyCenter.js"></script>
+        <script src="../JavaScript/Posts/gifLoader.js"></script>
         <!-- Bottom Banner -->
         <script src="../JavaScript/Posts/bottomBanner.js"></script>
         <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
@@ -31,6 +32,15 @@
         <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
         <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
         
+        <script>
+
+            QueueGifLoad("Gameplay1", "../Images/Astroblaster/Gameplay1.gif");
+            QueueGifLoad("Gameplay2", "../Images/Astroblaster/Gameplay2.gif");
+            QueueGifLoad("UI", "../Images/Astroblaster/UI.gif");
+            QueueGifLoad("CircleDemo", "../Images/Astroblaster/CircleDemo.gif");
+            
+        </script>
+
     </head>
 
     <body>
@@ -45,21 +55,18 @@
 
             <div id="content">
 
-                <p class="text center width75 mobile100">
-                    Astroblaster is an endless arcade shooter with periodic upgrade choices and new enemy spaceships that appear as the difficulty increases.
-                </p>
-
                 <div class="pair mobile75">
 
-                    <img src="../Images/Astroblaster/TitleUI.gif" alt="Image of UI" class="floatLeft">
+                    <img src="../Images/Astroblaster/Gameplay1.png" alt="Gif of gameplay" id="Gameplay1" class="floatLeft">
 
-                    <img src="../Images/Astroblaster/Gameplay2.gif" alt="Gif of gameplay" class="floatRight">
+                    <img src="../Images/Astroblaster/UI.png" alt="Gif of UI" id="UI" class="floatRight">
 
                 </div>
 
                 <div class="pair">
 
                     <p class="text floatLeft">
+                        Astroblaster is an endless arcade shooter with periodic upgrade choices and new enemy spaceships that appear as the difficulty increases.
                         I developed Astroblaster using Unity and C# to further improve my skill with these technologies. I handled all of the design and programming myself and experienced 
                         the process of designing and implementing gameplay features from start to finish. I also designed, programmed, and animated the UI, which involved extending 
                         Unity’s default text functionally to create curved text. I programmed the randomly generated background to avoid patterns and maintain consistent spacing 
@@ -75,7 +82,7 @@
 
                 </div>
 
-                <img src="../Images/Astroblaster/CircleDemo.gif" alt="testImage" class="width75 mobile100">
+                <img src="../Images/Astroblaster/CircleDemo.gif" alt="testImage" id="CircleDemo" class="width75 mobile100">
 
                 <p class="text center width75 mobile100">
                     A circle drawing shader with adjustable width and separately adjustable top and bottom gaps to easily fit any text.
@@ -118,7 +125,7 @@
                         
                     </div>
 
-                    <img src="../Images/Astroblaster/Gameplay1.gif" alt="Gif of gameplay" class="mobile75Individual floatRight">
+                    <img src="../Images/Astroblaster/Gameplay2.png" alt="Gif of gameplay" id="Gameplay2" class="floatRight mobile75Individual">
 
                 </div>
 
