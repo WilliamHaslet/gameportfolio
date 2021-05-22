@@ -1,14 +1,51 @@
 :root
 {
-    --palette1Main: rgb(22, 57, 68);
-    --palette1Dark: rgb(12, 39, 48);
-    --palette1Light: rgb(44, 100, 114);
+    --black: hsl(0, 0%, 0%);
 
-    --palette2Main: rgb(221, 165, 12);
-    --palette2Dark: rgb(22, 25, 49);
-    --palette2Light: rgb(40, 87, 67);
+    --tileColor1: rgb(22, 57, 68);
+    --tileHoverColor1: rgb(44, 100, 114);
+    --tileBackgroundColor1: rgb(12, 39, 48);
+    --pageForegroundColor1: rgb(22, 57, 68);
+    --pageBackgroundColor1: rgb(12, 39, 48);
+    --bannerColor1: rgb(2, 26, 34);
+    --textColor1: rgb(255, 255, 255);
+    --bannerTextColor1: rgb(255, 255, 255);
+    
+    /* Mint */
+    --tileColor2: hsl(159, 51%, 38%);
+    --tileHoverColor2: hsl(159, 51%, 38%);
+    --tileBackgroundColor2: hsl(172, 71%, 16%);
+    --pageForegroundColor2: hsl(172, 71%, 16%);
+    --pageBackgroundColor2: hsl(172, 71%, 16%);
+    --bannerColor2: hsl(159, 51%, 38%);
+    --textColor2: rgb(255, 255, 255);
+    --bannerTextColor2: rgb(255, 255, 255);
+    
+    /* Black and purple */
+    --tileColor3: hsl(261, 49%, 22%);
+    --tileHoverColor3: hsl(261, 41%, 31%);
+    --tileBackgroundColor3: hsl(0, 0%, 0%);
+    --pageForegroundColor3: hsl(0, 0%, 0%);
+    --pageBackgroundColor3: hsl(0, 0%, 0%);
+    --bannerColor3: hsl(261, 49%, 22%);
+    --textColor3: hsl(0, 0%, 100%);
+    --bannerTextColor3: hsl(0, 0%, 100%);
+    
+    --tileColor4: hsl(197, 51%, 38%);
+    --tileHoverColor4: hsl(17, 32%, 51%);
+    --tileBackgroundColor4: hsl(209, 71%, 16%);
+    --pageForegroundColor4: hsl(209, 71%, 16%);
+    --pageBackgroundColor4: hsl(209, 71%, 16%);
+    --bannerColor4: hsl(17, 51%, 38%);
+    --textColor4: hsl(0, 0%, 100%);
+    --bannerTextColor4: hsl(0, 0%, 100%);
 
-    --palette3Main: rgb(25, 42, 97);
-    --palette3Dark: rgb(4, 16, 54);
-    --palette3Light: rgb(96, 129, 236);
+    --tileColor5: hsl(205, 60%, 20%);
+    --tileHoverColor5: hsl(200, 50%, 32%);
+    --tileBackgroundColor5: hsl(210, 91%, 9%);
+    --pageForegroundColor5: hsl(205, 60%, 20%);
+    --pageBackgroundColor5: hsl(210, 91%, 9%);
+    --bannerColor5: hsl(0, 0%, 0%);
+    --textColor5: hsl(0, 0%, 100%);
+    --bannerTextColor5: hsl(0, 0%, 100%);
 }

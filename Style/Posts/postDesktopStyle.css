@@ -1,3 +1,8 @@
+html
+{
+    background-color: var(--pageBackgroundColor);
+}
+
 #bannerTitle
 {
     position: absolute;
@@ -12,7 +17,7 @@
 {
     position: absolute;
     top: var(--bannerHeight);
-    background-color: var(--themeColor);
+    background-color: var(--pageForegroundColor);
     width: var(--contentWidth);
     max-width: var(--contentMaxWidth);
     left: var(--desktopContentLeft);
@@ -102,7 +107,7 @@
     top: 11px;
     left: 13px;
     margin: 0 0 0 0;
-    border: 0 solid var(--fontColor);
+    border: 0 solid var(--textColor);
     --arrowWidth: 12px;
     border-bottom-width: var(--arrowWidth); 
     border-right-width: var(--arrowWidth);

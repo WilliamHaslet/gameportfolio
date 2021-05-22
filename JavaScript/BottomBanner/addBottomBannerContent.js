@@ -6,7 +6,7 @@ function NewLinkGroup(linkHref, imgSrc, textContent)
         <a href="${linkHref}" target="_blank" class="linkGroupLink" 
             onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
 
-            <img src="${imgSrc}" class="linkGroupImage">
+            <img src="${imgSrc}" class="linkGroupImage bannerIconColor">
 
             <p class="linkGroupText">${textContent}</p>
 
@@ -43,33 +43,10 @@ function AddBottomBannerContent(projectRoot)
 
         <p id="emailSectionText" class="sectionText">Email me at...</p>
 
-        <div class="linkGroup emailGroup">
+        <div class="linkGroup">
 
-            <p id="emailText" class="linkGroupText">williamhaslet@gmail.com</p>
+            <p class="linkGroupText">williamhaslet@gmail.com</p>
 
-        </div>
-
-        <div class="linkGroup emailGroup">
-            <a class="linkGroupLink"
-                onclick="CopyEmailToClipboard()"
-                onmouseover="OnLinkGroupHoverThin(this)" onmouseout="OnLinkGroupHoverEnd(this)">
-
-                <img src="${projectRoot}Images/Logos/copyIcon.png" class="linkGroupImage emailLinkIcon">
-
-                <p class="linkGroupText emailLinkText">Copy to Clipboard</p>
-
-            </a>
-        </div>
-
-        <div class="linkGroup emailGroup">
-            <a href="mailto:williamhaslet@gmail.com" target="_blank" class="linkGroupLink" 
-                onmouseover="OnLinkGroupHoverThin(this)" onmouseout="OnLinkGroupHoverEnd(this)">
-
-                <img src="${projectRoot}Images/Logos/emailIcon.png" id="emailIcon" class="linkGroupImage emailLinkIcon">
-
-                <p class="linkGroupText emailLinkText">Open in Mail Client</p>
-
-            </a>
         </div>
 
     `

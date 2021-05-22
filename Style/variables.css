@@ -27,11 +27,14 @@
     --linkSpacing: 70px;
 
     /* Colors */
-    --themeColor: rgb(22, 57, 68);
-    --themeColorDark: rgb(12, 39, 48);
-    --themeColorLight: rgb(44, 100, 114);
-    --fontColor: rgb(255, 255, 255);
+    --tileColor: rgb(22, 57, 68);
+    --tileHoverColor: rgb(44, 100, 114);
+    --tileBackgroundColor: rgb(12, 39, 48);
+    --pageForegroundColor: rgb(22, 57, 68);
+    --pageBackgroundColor: rgb(12, 39, 48);
     --bannerColor: rgb(2, 26, 34);
+    --textColor: rgb(255, 255, 255);
+    --bannerTextColor: rgb(255, 255, 255);
 
     /* Tiles */
     --postTilesMaxWidth: 2000px;
@@ -56,6 +59,8 @@
 
     --desktopContentLeft: calc((100% - var(--contentWidth)) / 2);
     --backButtonOffset: 20px;
+    --iconFilter: invert();
+    --bannerIconFilter: none;
 }
 
 @media screen and (max-width: 1400px) 

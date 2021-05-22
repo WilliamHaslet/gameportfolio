@@ -1,9 +1,8 @@
 html
 {
-    background-color: var(--themeColorDark);
     scroll-behavior: smooth;
     overflow-x: hidden;
-    color: var(--fontColor);
+    color: var(--textColor);
     font-size: var(--defaultFontSize);
     font-family: var(--defaultFontFamily);
     font-weight: var(--defaultFontWeight);
@@ -31,6 +30,7 @@ html
     left: 0%;
     right: 100%;
     font-family: var(--bannerFontFamily);
+    color: var(--bannerTextColor);
 }
 
 a

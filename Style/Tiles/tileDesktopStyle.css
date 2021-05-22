@@ -1,3 +1,8 @@
+html
+{
+    background-color: var(--tileBackgroundColor);
+}
+
 #bannerTitle
 {
     position: absolute;
@@ -42,14 +47,14 @@
 .postTile
 {
     display: inline-block;
-    background-color: var(--themeColor);
+    background-color: var(--tileColor);
     margin-top: var(--tileTopSpacing);
     transition: margin 0.35s, padding 0.35s, background-color 0.5s;
 }
 
 .postTile:hover
 {
-    background-color: var(--themeColorLight);
+    background-color: var(--tileHoverColor);
     margin-left: calc(var(--tileHoverZoomSize) * -1);
     margin-right: calc(var(--tileHoverZoomSize) * -1);
     margin-top: calc(var(--tileSpacing) + (var(--tileHoverZoomSize) * -1));

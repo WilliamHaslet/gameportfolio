@@ -1,16 +1,31 @@
-function SetColors(themeColor, darkColor, lightColor)
-{
-    SetCSSVariable("--themeColor", themeColor);
-    SetCSSVariable("--themeColorDark", darkColor);
-    SetCSSVariable("--themeColorLight", lightColor);
-}
-
 function LoadPalette(index)
 {
-    let main = GetCSSVariable("--palette" + index.toString() + "Main");
-    let dark = GetCSSVariable("--palette" + index.toString() + "Dark");
-    let light = GetCSSVariable("--palette" + index.toString() + "Light");
-    SetColors(main, dark, light);
+    SetCSSVariable("--tileColor", GetCSSVariable("--tileColor" + index.toString()));
+    SetCSSVariable("--tileHoverColor", GetCSSVariable("--tileHoverColor" + index.toString()));
+    SetCSSVariable("--tileBackgroundColor", GetCSSVariable("--tileBackgroundColor" + index.toString()));
+    SetCSSVariable("--pageForegroundColor", GetCSSVariable("--pageForegroundColor" + index.toString()));
+    SetCSSVariable("--pageBackgroundColor", GetCSSVariable("--pageBackgroundColor" + index.toString()));
+    SetCSSVariable("--bannerColor", GetCSSVariable("--bannerColor" + index.toString()));
+    SetCSSVariable("--textColor", GetCSSVariable("--textColor" + index.toString()));
+    SetCSSVariable("--bannerTextColor", GetCSSVariable("--bannerTextColor" + index.toString()));
+
+    if (GetCSSVariable("--textColor" + index.toString()) == GetCSSVariable("--black"))
+    {
+        SetCSSVariable("--iconFilter", "invert()");
+    }
+    else
+    {
+        SetCSSVariable("--iconFilter", "none");
+    }
+
+    if (GetCSSVariable("--bannerTextColor" + index.toString()) == GetCSSVariable("--black"))
+    {
+        SetCSSVariable("--bannerIconFilter", "invert()");
+    }
+    else
+    {
+        SetCSSVariable("--bannerIconFilter", "none");
+    }
 }
 
 var controlDown = false;
@@ -46,4 +61,4 @@ window.addEventListener("keyup", function(e)
 
 });
 
-LoadPalette(0);
+LoadPalette(5);

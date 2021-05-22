@@ -12,7 +12,7 @@
     
     .postTile:hover
     {
-        background-color: var(--themeColor);
+        background-color: var(--tileColor);
         margin-left: 0;
         margin-right: 0;
         margin-top: var(--tileTopSpacing);
@@ -22,7 +22,7 @@
 
     .tileTitle
     {
-        border-bottom: 3px solid var(--fontColor);
+        border-bottom: 3px solid var(--textColor);
     }
 
     .tileSpacer
