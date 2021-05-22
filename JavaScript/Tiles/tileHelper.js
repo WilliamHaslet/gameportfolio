@@ -108,8 +108,19 @@ function AddTile(title, descriptionArray, htmlPage, normalImage, hoverImage)
 
     let newPost = document.getElementById(postID);
 
-    newPost.innerHTML += TileImage(normalImage, hoverImage, imageID);
+    if (window.matchMedia("screen and (max-width: 800px)").matches)
+    {
 
+        newPost.innerHTML += TileImage(hoverImage, "", imageID);
+
+    }
+    else
+    {
+
+        newPost.innerHTML += TileImage(normalImage, hoverImage, imageID);
+
+    }
+    
     newPost.innerHTML += TileTitle(title, title);
 
     for (var i = 0; i < descriptionArray.length; i++)
