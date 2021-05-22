@@ -61,4 +61,4 @@ window.addEventListener("keyup", function(e)
 
 });
 
-LoadPalette(5);
+LoadPalette(9);

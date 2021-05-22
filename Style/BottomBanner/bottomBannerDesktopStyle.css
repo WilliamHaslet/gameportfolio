@@ -80,3 +80,8 @@
     filter: var(--iconFilter);
 }
 
+.textLinkColor
+{
+    color: var(--textColor);
+}
+

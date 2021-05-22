@@ -18,8 +18,8 @@
     --pageForegroundColor2: hsl(172, 71%, 16%);
     --pageBackgroundColor2: hsl(172, 71%, 16%);
     --bannerColor2: hsl(159, 51%, 38%);
-    --textColor2: rgb(255, 255, 255);
-    --bannerTextColor2: rgb(255, 255, 255);
+    --textColor2: hsl(0, 0%, 100%);
+    --bannerTextColor2: hsl(0, 0%, 100%);
     
     /* Black and purple */
     --tileColor3: hsl(261, 49%, 22%);
@@ -48,4 +48,44 @@
     --bannerColor5: hsl(0, 0%, 0%);
     --textColor5: hsl(0, 0%, 100%);
     --bannerTextColor5: hsl(0, 0%, 100%);
+
+    /* Teal */
+    --tileColor6: hsl(185, 75%, 22%);
+    --tileHoverColor6: hsl(185, 75%, 29%);
+    --tileBackgroundColor6: hsl(185, 90%, 15%);
+    --pageForegroundColor6: hsl(185, 90%, 15%);
+    --pageBackgroundColor6: hsl(185, 90%, 15%);
+    --bannerColor6: hsl(185, 75%, 29%);
+    --textColor6: hsl(0, 0%, 100%);
+    --bannerTextColor6: hsl(0, 0%, 100%);
+
+    /* Mint Black Text */
+    --tileColor7: hsl(170, 88%, 28%);
+    --tileHoverColor7: hsl(170, 88%, 28%);
+    --tileBackgroundColor7: hsl(164, 62%, 66%);
+    --pageForegroundColor7: hsl(170, 88%, 28%);
+    --pageBackgroundColor7: hsl(164, 62%, 66%);
+    --bannerColor7: hsl(164, 62%, 66%);
+    --textColor7: hsl(0, 0%, 100%);
+    --bannerTextColor7: hsl(0, 0%, 0%);
+
+    /* Mint 2 */
+    --tileColor8: hsl(170, 88%, 28%);
+    --tileHoverColor8: hsl(170, 78%, 40%);
+    --tileBackgroundColor8: hsl(170, 96%, 17%);
+    --pageForegroundColor8: hsl(170, 96%, 17%);
+    --pageBackgroundColor8: hsl(170, 96%, 17%);
+    --bannerColor8: hsl(170, 88%, 28%);
+    --textColor8: hsl(0, 0%, 100%);
+    --bannerTextColor8: hsl(0, 0%, 100%);
+
+    /* Teal Dark */
+    --tileColor9: hsl(185, 93%, 17%);
+    --tileHoverColor9: hsl(185, 87%, 25%);
+    --tileBackgroundColor9: hsl(185, 100%, 9%);
+    --pageForegroundColor9: hsl(185, 100%, 9%);
+    --pageBackgroundColor9: hsl(185, 100%, 9%);
+    --bannerColor9: hsl(185, 93%, 17%);
+    --textColor9: hsl(0, 0%, 100%);
+    --bannerTextColor9: hsl(0, 0%, 100%);
 }
