@@ -76,9 +76,9 @@
     {
         --bannerFontSize: 45px;
         --bannerFontWeight: 900;
-        --bannerBottomFontSize: 45px;
+        --bannerBottomFontSize: 35px;
         --bannerBottomFontWeight: 100;
-        --bannerLineHeight: 29px;
+        --bannerLineHeight: 26px;
 
         --tileHorizontalCount: 1;
         --tileSpacing: 5px;

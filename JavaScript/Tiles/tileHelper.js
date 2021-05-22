@@ -64,10 +64,11 @@ function PostTile(id, htmlPage, imageID, normalSrc, hoverSrc)
 
 }
 
-function TileImage(src, imageID)
+function TileImage(normalSrc, hoverSrc, imageID)
 {
 
-    return "<img src='" + src + "'id='" + imageID + "' class='tileImage'>";
+    return `<img src="${normalSrc}" id="${imageID}" class='tileImage'>
+            <img src="${hoverSrc}" style="display: none;">`;
 
 }
 
@@ -107,8 +108,8 @@ function AddTile(title, descriptionArray, htmlPage, normalImage, hoverImage)
 
     let newPost = document.getElementById(postID);
 
-    newPost.innerHTML += TileImage(normalImage, imageID);
-
+    newPost.innerHTML += TileImage(normalImage, hoverImage, imageID);
+    
     newPost.innerHTML += TileTitle(title, title);
 
     for (var i = 0; i < descriptionArray.length; i++)
@@ -149,7 +150,5 @@ function CorrectImage()
     }
 
 }
-
-window.addEventListener("load", CorrectImage);
 
 window.addEventListener("resize", CorrectImage);
