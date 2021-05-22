@@ -24,7 +24,6 @@
         <script src="../JavaScript/colorPalettes.js"></script>
         <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
         <script src="../JavaScript/Posts/verticallyCenter.js"></script>
-        <script src="../JavaScript/Posts/gifLoader.js"></script>
         <!-- Bottom Banner -->
         <script src="../JavaScript/Posts/bottomBanner.js"></script>
         <script src="../JavaScript/BottomBanner/addBottomBannerContent.js"></script>
@@ -32,13 +31,14 @@
         <script src="../JavaScript/BottomBanner/linkGroupHover.js"></script>
         <script src="../JavaScript/BottomBanner/copyEmail.js"></script>
         
+        <script src="../JavaScript/Posts/gifLoader.js"></script>
         <script>
 
             QueueGifLoad("Gameplay1", "../Images/Astroblaster/Gameplay1.gif");
             QueueGifLoad("Gameplay2", "../Images/Astroblaster/Gameplay2.gif");
             QueueGifLoad("UI", "../Images/Astroblaster/UI.gif");
             QueueGifLoad("CircleDemo", "../Images/Astroblaster/CircleDemo.gif");
-            
+
         </script>
 
     </head>
@@ -55,30 +55,30 @@
 
             <div id="content">
 
-                <div class="pair mobile75">
+                <div class="pair verticallyCenter">
 
-                    <img src="../Images/Astroblaster/Gameplay1.png" alt="Gif of gameplay" id="Gameplay1" class="floatLeft">
+                    <img src="../Images/Astroblaster/Gameplay1.png" alt="Gif of gameplay" id="Gameplay1" class="floatLeft mobile75Individual">
 
-                    <img src="../Images/Astroblaster/UI.png" alt="Gif of UI" id="UI" class="floatRight">
-
-                </div>
-
-                <div class="pair">
-
-                    <p class="text floatLeft">
+                    <p class="text floatRight">
                         Astroblaster is an endless arcade shooter with periodic upgrade choices and new enemy spaceships that appear as the difficulty increases.
                         I developed Astroblaster using Unity and C# to further improve my skill with these technologies. I handled all of the design and programming myself and experienced 
                         the process of designing and implementing gameplay features from start to finish. I also designed, programmed, and animated the UI, which involved extending 
                         Unity’s default text functionally to create curved text. I programmed the randomly generated background to avoid patterns and maintain consistent spacing 
                         among its elements. I also optimized the game for the large number of ships, projectiles, and background elements that could be in play at any given moment.
                     </p>
+                    
+                </div>
 
-                    <p class="text floatRight">
+                <div class="pair verticallyCenter">
+
+                    <p class="text floatLeft">
                         To implement the circular UI, I wrote a shader to draw circles with adjustable space for the text. My curved text implementation improved 
                         upon <a href="https://github.com/PushyPixels/BreakfastWithUnity/tree/master/Assets/69CurvedText">this</a> GitHub project. 
                         The original code moved text vertices individually, which resulted in some letters being noticeably warped, so I modified it to transform the center point of each text quad, 
                         then offset the vertices in local space. This maintained the normal spacing of the vertices, and prevented deformation.
                     </p>
+                    
+                    <img src="../Images/Astroblaster/UI.png" alt="Gif of UI" id="UI" class="floatRight mobile75Individual">
 
                 </div>
 
