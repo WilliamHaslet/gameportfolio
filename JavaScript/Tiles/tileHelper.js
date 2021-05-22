@@ -110,9 +110,9 @@ function AddTile(title, descriptionArray, htmlPage, normalImage, hoverImage)
 
     if (window.matchMedia("screen and (max-width: 800px)").matches)
     {
-
+        
         newPost.innerHTML += TileImage(hoverImage, "", imageID);
-
+        
     }
     else
     {
