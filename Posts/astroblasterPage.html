@@ -23,7 +23,6 @@
         <script src="../JavaScript/isMobile.js"></script>
         <script src="../JavaScript/colorPalettes.js"></script>
         <script src="../JavaScript/Posts/contentMaxWidth.js"></script>
-        <script src="../JavaScript/Posts/addFloats.js"></script>
         <script src="../JavaScript/Posts/verticallyCenter.js"></script>
         <!-- Bottom Banner -->
         <script src="../JavaScript/Posts/bottomBanner.js"></script>
@@ -52,22 +51,22 @@
 
                 <div class="pair mobile75">
 
-                    <img src="../Images/Astroblaster/TitleUI.gif" alt="Image of UI">
+                    <img src="../Images/Astroblaster/TitleUI.gif" alt="Image of UI" class="floatLeft">
 
-                    <img src="../Images/Astroblaster/Gameplay2.gif" alt="Gif of gameplay">
+                    <img src="../Images/Astroblaster/Gameplay2.gif" alt="Gif of gameplay" class="floatRight">
 
                 </div>
 
                 <div class="pair">
 
-                    <p class="text">
+                    <p class="text floatLeft">
                         I developed Astroblaster using Unity and C# to further improve my skill with these technologies. I handled all of the design and programming myself and experienced 
                         the process of designing and implementing gameplay features from start to finish. I also designed, programmed, and animated the UI, which involved extending 
                         Unity’s default text functionally to create curved text. I programmed the randomly generated background to avoid patterns and maintain consistent spacing 
                         among its elements. I also optimized the game for the large number of ships, projectiles, and background elements that could be in play at any given moment.
                     </p>
 
-                    <p class="text">
+                    <p class="text floatRight">
                         To implement the circular UI, I wrote a shader to draw circles with adjustable space for the text. My curved text implementation improved 
                         upon <a href="https://github.com/PushyPixels/BreakfastWithUnity/tree/master/Assets/69CurvedText">this</a> GitHub project. 
                         The original code moved text vertices individually, which resulted in some letters being noticeably warped, so I modified it to transform the center point of each text quad, 
@@ -84,9 +83,9 @@
 
                 <div class="pair">
 
-                    <img src="../Images/Astroblaster/CurveTextArialBad.png" alt="Curved text old" class="mobileHorizontal">
+                    <img src="../Images/Astroblaster/CurveTextArialBad.png" alt="Curved text old" class="mobileHorizontal floatLeft">
 
-                    <img src="../Images/Astroblaster/CurveTextArialGood.png" alt="Curved text improved" class="mobileHorizontal">
+                    <img src="../Images/Astroblaster/CurveTextArialGood.png" alt="Curved text improved" class="mobileHorizontal floatRight">
 
                 </div>
 
@@ -97,7 +96,7 @@
 
                 <div class="pair verticallyCenter">
 
-                    <div class="center">
+                    <div class="center floatLeft">
 
                         <a href="https://github.com/WilliamHaslet/astroblaster" target="_blank" class="linkGroupLink iconGroupBottomMargin" 
                             onmouseover="OnLinkGroupHover(this)" onmouseout="OnLinkGroupHoverEnd(this)">
@@ -119,7 +118,7 @@
                         
                     </div>
 
-                    <img src="../Images/Astroblaster/Gameplay1.gif" alt="Gif of gameplay" class="mobile75Individual">
+                    <img src="../Images/Astroblaster/Gameplay1.gif" alt="Gif of gameplay" class="mobile75Individual floatRight">
 
                 </div>
 
