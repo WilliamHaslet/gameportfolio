@@ -68,7 +68,7 @@ function TileImage(normalSrc, hoverSrc, imageID)
 {
 
     return `<img src="${normalSrc}" id="${imageID}" class='tileImage'>
-            <img src="${hoverSrc}" style="display: none;">`;
+            <img src="${hoverSrc}" width=0>`;
 
 }
 
@@ -109,7 +109,7 @@ function AddTile(title, descriptionArray, htmlPage, normalImage, hoverImage)
     let newPost = document.getElementById(postID);
 
     newPost.innerHTML += TileImage(normalImage, hoverImage, imageID);
-    
+
     newPost.innerHTML += TileTitle(title, title);
 
     for (var i = 0; i < descriptionArray.length; i++)
