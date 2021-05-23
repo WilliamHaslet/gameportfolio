@@ -95,25 +95,29 @@ html
 
 .tileDescription
 {
-    width: calc(var(--tileTextWidth) - var(--tileDescriptionRightMargin));
-    margin-left: calc(((100% - var(--tileTextWidth)) / 2) + var(--tileDescriptionIndent));
+    width: calc(var(--tileTextWidth));
+    margin-left: calc((100% - var(--tileTextWidth)) / 2);
     margin-top: 0;
-    margin-bottom: calc(var(--tileTitleVerticalMargins) + 3px);
-    text-align: left;
-    text-indent: calc(var(--tileDescriptionIndent) * -1);
-}
-
-br
-{
-    margin-bottom: 2px;
-}
-
-br.big
-{
-    margin-bottom: 10px;
 }
 
 .sectionTitle
 {
     font-weight: 400;
+}
+
+.sectionTitleSpacing
+{
+    margin-bottom: 3px;
+}
+
+.bulletSpacing
+{
+    width: calc(var(--tileTextWidth) - var(--tileDescriptionIndent));
+    margin-bottom: 12px;
+    margin-left: calc(((100% - var(--tileTextWidth)) / 2) + var(--tileDescriptionIndent));
+}
+
+.bulletSpacingBig
+{
+    margin-bottom: 22px;
 }

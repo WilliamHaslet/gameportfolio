@@ -47,9 +47,8 @@
     --tileHoverZoomSize: 10px;
     --tileTopSpacing: var(--tileSpacing);
     
-    --tileTitleVerticalMargins: 24px;
+    --tileTitleVerticalMargins: 22px;
 
-    --tileDescriptionRightMargin: 5%;
     --tileDescriptionIndent: 15px;
 
     /* Posts */

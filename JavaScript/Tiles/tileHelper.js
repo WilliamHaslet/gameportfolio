@@ -83,17 +83,41 @@ function TileDescription(s)
 {
     
     let strings = s.split("\n");
+    
+    var output;
 
-    var output = "<p class='tileDescription'><span class='sectionTitle'>" + strings[0] + "</span>";
+    if (strings.length == 1)
+    {
+
+        output = "<p class='tileDescription sectionTitle'>" + strings[0] + "</p>";
+
+    }
+    else
+    {
+
+        output = "<p class='tileDescription sectionTitle sectionTitleSpacing'>" + strings[0] + "</p>";
+
+    }
 
     for (var i = 1; i < strings.length; i++)
     {
 
-        output += strings[i];
+        if (i == strings.length - 1)
+        {
+
+            output += "<p class='tileDescription bulletSpacing bulletSpacingBig'>" + strings[i] + "</p>";
+
+        }
+        else
+        {
+
+            output += "<p class='tileDescription bulletSpacing'>" + strings[i] + "</p>";
+
+        }
 
     }
     
-    return output + "</p>";
+    return output;
 
 }
 
@@ -129,7 +153,7 @@ function AddTile(title, descriptionArray, htmlPage, normalImage, hoverImage)
         newPost.innerHTML += TileDescription(descriptionArray[i]);
 
     }
-    
+
 }
 
 function AddTileSpacer()
