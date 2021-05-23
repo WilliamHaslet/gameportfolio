@@ -40,11 +40,12 @@
     --textColor4: hsl(0, 0%, 100%);
     --bannerTextColor4: hsl(0, 0%, 100%);
 
-    --tileColor5: hsl(205, 60%, 20%);
-    --tileHoverColor5: hsl(200, 50%, 32%);
-    --tileBackgroundColor5: hsl(210, 91%, 9%);
-    --pageForegroundColor5: hsl(205, 60%, 20%);
-    --pageBackgroundColor5: hsl(210, 91%, 9%);
+    /* Black and blue */
+    --tileColor5: hsl(205, 79%, 15%);
+    --tileHoverColor5: hsl(205, 76%, 26%);
+    --tileBackgroundColor5: hsl(210, 88%, 7%);
+    --pageForegroundColor5: hsl(205, 79%, 15%);
+    --pageBackgroundColor5: hsl(210, 88%, 7%);
     --bannerColor5: hsl(0, 0%, 0%);
     --textColor5: hsl(0, 0%, 100%);
     --bannerTextColor5: hsl(0, 0%, 100%);

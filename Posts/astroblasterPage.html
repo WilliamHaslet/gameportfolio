@@ -62,8 +62,8 @@
                     <p class="text floatRight">
                         Astroblaster is an endless arcade shooter with periodic upgrade choices and new enemy spaceships that appear as the difficulty increases.
                         I developed Astroblaster using Unity and C# to further improve my skill with these technologies. I handled all of the design and programming myself and experienced 
-                        the process of designing and implementing gameplay features from start to finish. I also designed, programmed, and animated the UI, which involved extending 
-                        Unity’s default text functionally to create curved text. I programmed the randomly generated background to avoid patterns and maintain consistent spacing 
+                        the process of designing and implementing gameplay features from start to finish. When creating the UI, I extended 
+                        Unity’s default text functionally to create curved text. The randomly generated background was programmed to avoid patterns and maintain consistent spacing 
                         among its elements. I also optimized the game for the large number of ships, projectiles, and background elements that could be in play at any given moment.
                     </p>
                     
@@ -73,9 +73,9 @@
 
                     <p class="text floatLeft">
                         To implement the circular UI, I wrote a shader to draw circles with adjustable space for the text. My curved text implementation improved 
-                        upon <a href="https://github.com/PushyPixels/BreakfastWithUnity/tree/master/Assets/69CurvedText">this</a> GitHub project. 
+                        upon <a href="https://github.com/PushyPixels/BreakfastWithUnity/tree/master/Assets/69CurvedText" target="_blank">this</a> GitHub project. 
                         The original code moved text vertices individually, which resulted in some letters being noticeably warped, so I modified it to transform the center point of each text quad, 
-                        then offset the vertices in local space. This maintained the normal spacing of the vertices, and prevented deformation.
+                        then offset the vertices in local space. This maintained the normal spacing of the vertices and prevented deformation.
                     </p>
                     
                     <img src="../Images/Astroblaster/UI.png" alt="Gif of UI" id="UI" class="floatRight mobile75Individual">
@@ -85,7 +85,7 @@
                 <img src="../Images/Astroblaster/CircleDemo.gif" alt="testImage" id="CircleDemo" class="width75 mobile100">
 
                 <p class="text center width75 mobile100">
-                    A circle drawing shader with adjustable width and separately adjustable top and bottom gaps to easily fit any text.
+                    The circle drawing shader I programmed uses adjustable width and gaps to easily fit any text.
                 </p>
 
                 <div class="pair">
@@ -97,7 +97,7 @@
                 </div>
 
                 <p class="text center width75 mobile100">
-                    Deformation of the letters, especially the stem of the T, can be seen on the left. 
+                    Deformation of the letters, especially the C and stem of the T, can be seen on the left. 
                     My implementation transforms the center of each letter to avoid this effect, as seen on the right.
                 </p>
 

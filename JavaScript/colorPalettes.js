@@ -40,7 +40,7 @@ window.addEventListener("keydown", function(e)
 
     }
 
-    if (!controlDown)
+    if (!controlDown && parseInt(e.key))
     {
 
         LoadPalette(parseInt(e.key));
@@ -61,4 +61,4 @@ window.addEventListener("keyup", function(e)
 
 });
 
-LoadPalette(9);
+LoadPalette(5);

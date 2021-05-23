@@ -1,6 +1,7 @@
 html
 {
     scroll-behavior: smooth;
+    scrollbar-color: var(--tileColor) var(--tileBackgroundColor);
     overflow-x: hidden;
     color: var(--textColor);
     font-size: var(--defaultFontSize);
@@ -36,4 +37,19 @@ html
 a
 {
     color: inherit;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: var(--tileBackgroundColor);
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: var(--tileColor);
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: var(--tileHoverColor)
 }
