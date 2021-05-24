@@ -37,7 +37,7 @@ function AddBottomBannerContent(projectRoot)
             `${projectRoot}Images/Logos/itchioLogo.png`, 
             "itch.io")}
 
-        ${NewLinkGroup("${projectRoot}Downloads/Resume-WilliamHaslet.pdf", 
+        ${NewLinkGroup(`${projectRoot}Downloads/Resume-WilliamHaslet.pdf`, 
             `${projectRoot}Images/Logos/pdfIcon.png`, 
             "Resume")}
 
