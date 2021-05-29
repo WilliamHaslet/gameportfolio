@@ -78,8 +78,8 @@
 {
     :root
     {
-        --bannerFontSize: 40px;
-        --bannerBottomFontSize: 36px;
+        --bannerFontSize: 42px;
+        --bannerBottomFontSize: 42px;
         --bannerLineHeight: 28px;
 
         --tileHorizontalCount: 1;
